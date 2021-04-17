@@ -17,10 +17,10 @@ Note: Command 2 and 4 can be nested like this:
 
 
 ### Files
-1. game.l : lexer
-2. game.y : parser
+1. `game.l` : lexer
+2. `game.y` : parser
 
 
 ### Steps to run
-1. make
-2. ./game
+1. `make`
+2. `./game`
