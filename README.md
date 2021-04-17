@@ -6,7 +6,7 @@ This is a modified version of the 2048 game, which supports subtraction, multipl
 
 The interpreter also allows for setting values to the tiles (possibly to make puzzles), Naming Tiles, Querying the value in a tile. 
 
-# Supported Functionality and Syntax
+### Supported Functionality and Syntax
 1. 16 Moves: `ADD/SUBTRACT/MULTIPLY/DIVIDE LEFT/RIGHT/UP/DOWN.`
 2. Assignment: `ASSIGN <value> TO <x>,<y>.`
 3. Naming: `VAR <varname> IS <x>,<y>.`
@@ -16,11 +16,11 @@ Note: Command 2 and 4 can be nested like this:
 `ASSIGN VALUE IN <x>,<y> TO <x>,<y>.`
 
 
-## Files
+### Files
 1. game.l : lexer
 2. game.y : parser
 
 
-## Steps to run
+### Steps to run
 1. make
 2. ./game
