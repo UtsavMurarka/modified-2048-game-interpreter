@@ -2,7 +2,7 @@
 An interpreter for a modified version of the 2048 game created using Flex and Bison for the compiler construction course
 
 # The Game
-This is a modified version of the 2048 game, which supports subtraction, multiplication and division apart from simple addition of tiles, which means, 2 equal tiles can annihilate together (be made 0 by subtraction), or be reduced to 1 by division, or be squared by multiplication.
+This is a modified version of the 2048 game, which supports subtraction, multiplication and division apart from simple addition of tiles, which means, 2 equal tiles can annihilate together (be made 0 by subtraction), or be reduced to 1 by division, or be squared by multiplication, or double by addition (as in the standard game).
 
 The interpreter also allows for setting values to the tiles (possibly to make puzzles), Naming Tiles, Querying the value in a tile. 
 
