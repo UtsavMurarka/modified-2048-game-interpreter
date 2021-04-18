@@ -24,3 +24,233 @@ Note: Command 2 and 4 can be nested like this:
 ### Steps to run
 1. `make`
 2. `./game`
+
+## Example
+
+### Input (example/input.txt)
+```
+ADD LEFT.
+SUBTRACT RIGHT.
+ASSIGN 2 TO 2,2.
+ASSIGN 2 TO 1,2.
+VAR var1 IS 2,2.
+VAR var2 IS 1,2.
+ADD UP.
+DIVIDE DOWN.
+MULTIPLY LEFT.
+WRONG STATEMENT
+ASSIGN 7 TO 4,4.
+ASSIGN VALUE IN 4,4 TO 3,3.
+ASSIGN VALUE IN 3,3 TO 2,2.
+ASSIGN VALUE IN 2,2 TO 1,1.
+VALUE IN 1,1.
+```
+
+### Output (example/output.txt)
+```
+2048> Hi, I am the 2048-game Engine.
+2048> The Current State is
+
+-----------------
+| 0 | 0 | 0 | 0 | 
+-----------------
+| 0 | 0 | 0 | 0 | 
+-----------------
+| 0 | 4 | 0 | 0 | 
+-----------------
+| 0 | 0 | 0 | 0 | 
+-----------------
+2048> Please type a command
+----> 
+2048> Left Move Complete and Random Tile Added
+2048> The Current State is
+
+-----------------
+| 0 | 0 | 4 | 0 | 
+-----------------
+| 0 | 0 | 0 | 0 | 
+-----------------
+| 4 | 0 | 0 | 0 | 
+-----------------
+| 0 | 0 | 0 | 0 | 
+-----------------
+2048> Please type a command
+----> 
+2048> Right Move Complete and Random Tile Added
+2048> The Current State is
+
+-----------------
+| 0 | 0 | 0 | 4 | 
+-----------------
+| 0 | 0 | 0 | 0 | 
+-----------------
+| 0 | 0 | 0 | 4 | 
+-----------------
+| 0 | 2 | 0 | 0 | 
+-----------------
+2048> Please type a command
+----> 
+2048> Assignment Done
+2048> The Current State is
+
+-----------------
+| 0 | 0 | 0 | 4 | 
+-----------------
+| 0 | 2 | 0 | 0 | 
+-----------------
+| 0 | 0 | 0 | 4 | 
+-----------------
+| 0 | 2 | 0 | 0 | 
+-----------------
+2048> Please type a command
+----> 
+2048> Assignment Done
+2048> The Current State is
+
+-----------------
+| 0 | 2 | 0 | 4 | 
+-----------------
+| 0 | 2 | 0 | 0 | 
+-----------------
+| 0 | 0 | 0 | 4 | 
+-----------------
+| 0 | 2 | 0 | 0 | 
+-----------------
+2048> Please type a command
+----> 
+2048> Tile Named Succesfully.
+2048> The Current State is
+
+-----------------
+| 0 | 2 | 0 | 4 | 
+-----------------
+| 0 | 2 | 0 | 0 | 
+-----------------
+| 0 | 0 | 0 | 4 | 
+-----------------
+| 0 | 2 | 0 | 0 | 
+-----------------
+2048> Please type a command
+----> 
+2048> Tile Named Succesfully.
+2048> The Current State is
+
+-----------------
+| 0 | 2 | 0 | 4 | 
+-----------------
+| 0 | 2 | 0 | 0 | 
+-----------------
+| 0 | 0 | 0 | 4 | 
+-----------------
+| 0 | 2 | 0 | 0 | 
+-----------------
+2048> Please type a command
+----> 
+2048> Up Move Complete and Random Tile Added
+2048> The Current State is
+
+-----------------
+| 0 | 4 | 4 | 8 | 
+-----------------
+| 0 | 2 | 0 | 0 | 
+-----------------
+| 0 | 0 | 0 | 0 | 
+-----------------
+| 0 | 0 | 0 | 0 | 
+-----------------
+2048> Please type a command
+----> 
+2048> Down Move Complete and Random Tile Added
+2048> The Current State is
+
+-----------------
+| 0 | 0 | 4 | 0 | 
+-----------------
+| 0 | 0 | 0 | 0 | 
+-----------------
+| 0 | 4 | 0 | 0 | 
+-----------------
+| 0 | 2 | 4 | 8 | 
+-----------------
+2048> Please type a command
+----> 
+2048> Left Move Complete and Random Tile Added
+2048> The Current State is
+
+-----------------
+| 4 | 0 | 0 | 2 | 
+-----------------
+| 0 | 0 | 0 | 0 | 
+-----------------
+| 4 | 0 | 0 | 0 | 
+-----------------
+| 2 | 4 | 8 | 0 | 
+-----------------
+2048> Please type a command
+----> 2048> Invalid Command. Please Re-enter
+----> 
+2048> Assignment Done
+2048> The Current State is
+
+-----------------
+| 4 | 0 | 0 | 2 | 
+-----------------
+| 0 | 0 | 0 | 0 | 
+-----------------
+| 4 | 0 | 0 | 0 | 
+-----------------
+| 2 | 4 | 8 | 7 | 
+-----------------
+2048> Please type a command
+----> 
+2048> Value at 4,4 is 7
+----> 
+2048> Assignment Done
+2048> The Current State is
+
+-----------------
+| 4 | 0 | 0 | 2 | 
+-----------------
+| 0 | 0 | 0 | 0 | 
+-----------------
+| 4 | 0 | 7 | 0 | 
+-----------------
+| 2 | 4 | 8 | 7 | 
+-----------------
+2048> Please type a command
+----> 
+2048> Value at 3,3 is 7
+----> 
+2048> Assignment Done
+2048> The Current State is
+
+-----------------
+| 4 | 0 | 0 | 2 | 
+-----------------
+| 0 | 7 | 0 | 0 | 
+-----------------
+| 4 | 0 | 7 | 0 | 
+-----------------
+| 2 | 4 | 8 | 7 | 
+-----------------
+2048> Please type a command
+----> 
+2048> Value at 2,2 is 7
+----> 
+2048> Assignment Done
+2048> The Current State is
+
+-----------------
+| 7 | 0 | 0 | 2 | 
+-----------------
+| 0 | 7 | 0 | 0 | 
+-----------------
+| 4 | 0 | 7 | 0 | 
+-----------------
+| 2 | 4 | 8 | 7 | 
+-----------------
+2048> Please type a command
+----> 
+2048> Value at 1,1 is 7
+----> 
+```
